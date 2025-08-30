@@ -47,51 +47,7 @@ const Index = () => {
         {!showDemo ? (
           // Landing Screen
           <div className="min-h-screen flex flex-col items-center justify-center px-4">
-            <Card className="max-w-4xl mx-auto p-8 hologram-border bg-card/30 backdrop-blur-md">
-              <div className="text-center space-y-8">
-                {/* Hero Section */}
-                <div className="space-y-4">
-                  <h1 className="text-5xl md:text-7xl font-bold hologram-text mb-6">
-                    KARDIVERSE
-                  </h1>
-                  <h2 className="text-2xl md:text-3xl font-semibold text-primary mb-4">
-                    Gates of Display
-                  </h2>
-                  <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                    Experience the future with our interactive hologram avatar demo. 
-                    Scan the QR code to witness cutting-edge holographic technology come to life.
-                  </p>
-                </div>
-                
-                {/* Features */}
-                <div className="grid md:grid-cols-3 gap-6 my-12">
-                  <div className="p-6 rounded-lg hologram-border bg-card/20">
-                    <div className="text-4xl mb-4">🎭</div>
-                    <h3 className="text-xl font-semibold mb-2 text-primary">3D Hologram Avatar</h3>
-                    <p className="text-sm text-muted-foreground">
-                      Interactive 3D avatar with realistic holographic effects and animations
-                    </p>
-                  </div>
-                  <div className="p-6 rounded-lg hologram-border bg-card/20">
-                    <div className="text-4xl mb-4">🗣️</div>
-                    <h3 className="text-xl font-semibold mb-2 text-primary">AI Voice Synthesis</h3>
-                    <p className="text-sm text-muted-foreground">
-                      Neural text-to-speech with synchronized lip movements and subtitles
-                    </p>
-                  </div>
-                  <div className="p-6 rounded-lg hologram-border bg-card/20">
-                    <div className="text-4xl mb-4">📱</div>
-                    <h3 className="text-xl font-semibold mb-2 text-primary">QR Activation</h3>
-                    <p className="text-sm text-muted-foreground">
-                      Instant activation via QR code scan or NFC trigger
-                    </p>
-                  </div>
-                </div>
-                
-                {/* QR Trigger */}
-                <QRTrigger onScan={handleScan} />
-              </div>
-            </Card>
+            <QRTrigger onScan={handleScan} />
           </div>
         ) : (
           // Hologram Demo Screen
